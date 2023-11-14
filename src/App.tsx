@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Counter from "./store1/counter";
+import ShowCounter from "./store1/show-counter";
+import Counter2 from "./store2/counter2";
+import ShowCounter2 from "./store2/show-counter2";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{display:'flex', gap:50}}>
+        <div>
+          <h2>Store 1</h2>
+          <Counter />
+          <ShowCounter />
+          <ShowCounter />
+          <ShowCounter />
+        </div>
+        <div>
+          <h2>Store 2</h2>
+          <Counter2 />
+          <ShowCounter2 />
+          <ShowCounter2 />
+          <ShowCounter2 />
+        </div>
+       
     </div>
   );
 }
